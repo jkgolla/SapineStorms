@@ -1,0 +1,423 @@
+TITLE
+Steady state weathering model for granite 
+END
+ 
+RUNTIME
+time_units         days
+timestep_max       0.01
+timestep_init      0.01
+time_tolerance     0.01
+hindmarsh          true
+correction_max     2.0
+debye-huckel       true
+database_sweep     false
+speciate_only      false
+graphics           kaleidagraph
+solver             gmres
+preconditioner     ilu
+precondition_level 1
+master_variable    H+
+database           Database.dbs
+restart            Wet.rst
+gimrt              true
+screen_output      50 
+END
+ 
+OUTPUT
+time_units           days
+spatial_profile      7.
+time_series   node1.out   1 1 1
+time_series   node2.out   2 1 1
+time_series   node3.out   3 1 1
+time_series   node4.out   4 1 1
+time_series   node5.out   5 1 1
+time_series   node6.out   6 1 1
+time_series   node7.out   7 1 1
+time_series   node8.out   8 1 1
+time_series   node9.out   9 1 1
+time_series   node10.out   10 1 1
+time_series   node11.out   11 1 1
+time_series   node12.out   12 1 1
+time_series   node13.out   13 1 1
+time_series   node14.out   14 1 1
+time_series   node15.out   15 1 1
+time_series   node16.out   16 1 1
+time_series   node17.out   17 1 1
+time_series   node18.out   18 1 1
+time_series   node19.out   19 1 1
+time_series   node20.out   20 1 1
+time_series   node21.out   21 1 1
+time_series   node22.out   22 1 1
+time_series   node23.out   23 1 1
+time_series   node24.out   24 1 1
+time_series   node25.out   25 1 1
+time_series   node26.out   26 1 1
+time_series   node27.out   27 1 1
+time_series   node28.out   28 1 1
+time_series   node29.out   29 1 1
+time_series   node30.out   30 1 1
+time_series   node31.out   31 1 1
+time_series   node32.out   32 1 1
+time_series   node33.out   33 1 1
+time_series   node34.out   34 1 1
+time_series   node35.out   35 1 1
+time_series   node36.out   36 1 1
+time_series   node37.out   37 1 1
+time_series   node38.out   38 1 1
+time_series   node39.out   39 1 1
+time_series   node40.out   40 1 1
+time_series   node41.out   41 1 1
+time_series   node42.out   42 1 1
+time_series   node43.out   43 1 1
+time_series   node44.out   44 1 1
+time_series   node45.out   45 1 1
+time_series   node46.out   46 1 1
+time_series   node47.out   47 1 1
+time_series   node48.out   48 1 1
+time_series   node49.out   49 1 1
+time_series   node50.out   50 1 1
+time_series   node51.out   51 1 1
+time_series   node52.out   52 1 1
+time_series   node53.out   53 1 1
+time_series   node54.out   54 1 1
+time_series   node55.out   55 1 1
+time_series   node56.out   56 1 1
+time_series   node57.out   57 1 1
+time_series   node58.out   58 1 1
+time_series   node59.out   59 1 1
+time_series   node60.out   60 1 1
+time_series   node61.out   61 1 1
+time_series   node62.out   62 1 1
+time_series   node63.out   63 1 1
+time_series   node64.out   64 1 1
+time_series   node65.out   65 1 1
+time_series   node66.out   66 1 1
+time_series   node67.out   67 1 1
+time_series   node68.out   68 1 1
+time_series   node69.out   69 1 1
+time_series   node70.out   70 1 1
+time_series   node71.out   71 1 1
+time_series   node72.out   72 1 1
+time_series   node73.out   73 1 1
+time_series   node74.out   74 1 1
+time_series   node75.out   75 1 1
+time_series   node76.out   76 1 1
+time_series   node77.out   77 1 1
+time_series   node78.out   78 1 1
+time_series   node79.out   79 1 1
+time_series   node80.out   80 1 1
+time_series   node81.out   81 1 1
+time_series   node82.out   82 1 1
+time_series   node83.out   83 1 1
+time_series   node84.out   84 1 1
+time_series   node85.out   85 1 1
+time_series   node86.out   86 1 1
+time_series   node87.out   87 1 1
+time_series   node88.out   88 1 1
+time_series   node89.out   89 1 1
+time_series   node90.out   90 1 1
+time_series   node91.out   91 1 1
+time_series   node92.out   92 1 1
+time_series   node93.out   93 1 1
+time_series   node94.out   94 1 1
+time_series   node95.out   95 1 1
+time_series   node96.out   96 1 1
+time_series   node97.out   97 1 1
+time_series   node98.out   98 1 1
+time_series   node99.out   99 1 1
+time_series   node100.out   100 1 1
+time_series   node101.out   101 1 1
+time_series   node102.out   102 1 1
+time_series   node103.out   103 1 1
+time_series   node104.out   104 1 1
+time_series   node105.out   105 1 1
+time_series   node106.out   106 1 1
+time_series   node107.out   107 1 1
+time_series   node108.out   108 1 1
+time_series   node109.out   109 1 1
+time_series   node110.out   110 1 1
+time_series   node111.out   111 1 1
+time_series   node112.out   112 1 1
+time_series   node113.out   113 1 1
+time_series   node114.out   114 1 1
+time_series   node115.out   115 1 1
+time_series   node116.out   116 1 1
+time_series   node117.out   117 1 1
+time_series   node118.out   118 1 1
+time_series   node119.out   119 1 1
+time_series   node120.out   120 1 1
+time_series   node121.out   121 1 1
+time_series   node122.out   122 1 1
+time_series   node123.out   123 1 1
+time_series   node124.out   124 1 1
+time_series   node125.out   125 1 1
+time_series   node126.out   126 1 1
+time_series   node127.out   127 1 1
+time_series   node128.out   128 1 1
+time_series   node129.out   129 1 1
+time_series   node130.out   130 1 1
+time_series   node131.out   131 1 1
+time_series   node132.out   132 1 1
+time_series   node133.out   133 1 1
+time_series   node134.out   134 1 1
+time_series   node135.out   135 1 1
+time_series   node136.out   136 1 1
+time_series   node137.out   137 1 1
+time_series   node138.out   138 1 1
+time_series   node139.out   139 1 1
+time_series   node140.out   140 1 1
+time_series   node141.out   141 1 1
+time_series   node142.out   142 1 1
+time_series   node143.out   143 1 1
+time_series   node144.out   144 1 1
+time_series   node145.out   145 1 1
+time_series   node146.out   146 1 1
+time_series   node147.out   147 1 1
+time_series   node148.out   148 1 1
+time_series   node149.out   149 1 1
+time_series   node150.out   150 1 1
+time_series   node151.out   151 1 1
+time_series   node152.out   152 1 1
+time_series   node153.out   153 1 1
+time_series   node154.out   154 1 1
+time_series   node155.out   155 1 1
+time_series   node156.out   156 1 1
+time_series   node157.out   157 1 1
+time_series   node158.out   158 1 1
+time_series   node159.out   159 1 1
+time_series   node160.out   160 1 1
+time_series   node161.out   161 1 1
+time_series   node162.out   162 1 1
+time_series   node163.out   163 1 1
+time_series   node164.out   164 1 1
+time_series   node165.out   165 1 1
+time_series   node166.out   166 1 1
+time_series   node167.out   167 1 1
+time_series   node168.out   168 1 1
+time_series   node169.out   169 1 1
+time_series   node170.out   170 1 1
+time_series   node171.out   171 1 1
+time_series   node172.out   172 1 1
+time_series   node173.out   173 1 1
+time_series   node174.out   174 1 1
+time_series   node175.out   175 1 1
+time_series   node176.out   176 1 1
+time_series   node177.out   177 1 1
+time_series   node178.out   178 1 1
+time_series   node179.out   179 1 1
+time_series   node180.out   180 1 1
+time_series   node181.out   181 1 1
+time_series   node182.out   182 1 1
+time_series   node183.out   183 1 1
+time_series   node184.out   184 1 1
+time_series   node185.out   185 1 1
+time_series   node186.out   186 1 1
+time_series   node187.out   187 1 1
+time_series   node188.out   188 1 1
+time_series   node189.out   189 1 1
+time_series   node190.out   190 1 1
+time_series   node191.out   191 1 1
+time_series   node192.out   192 1 1
+time_series   node193.out   193 1 1
+time_series   node194.out   194 1 1
+time_series   node195.out   195 1 1
+time_series   node196.out   196 1 1
+time_series   node197.out   197 1 1
+time_series   node198.out   198 1 1
+time_series   node199.out   199 1 1
+time_series   node200.out   200 1 1
+time_series_print    Na+ K+ Ca++ Mg++ Al+++ Fe+++ Fe++ SiO2(aq) CO2(aq) pH Li7+ Li6+
+time_minseries       mintop.out       1  1  1
+time_minseries       minbot.out       200  1  1
+END
+
+TRANSPORT
+distance_units           centimeter
+time_units               second
+fix_diffusion            0.919E-05
+dispersion               0.00
+END
+
+TEMPERATURE
+set_temperature  7.0
+END
+
+BOUNDARY_CONDITIONS
+x_begin   rain           dirichlet
+x_end     corestone           flux
+END
+
+INITIAL_CONDITIONS
+corestone   1-200
+END
+
+!AQUEOUS_KINETICS
+!Iron_oxidation   -rate  4000.
+!END
+
+ISOTOPES
+primary    Li6+             Li7+             0.08110300081103
+!mineral    Illite_Li6       Illite_Li7       none
+mineral    Kaolinite_Li6       Kaolinite_Li7       none
+!mineral    Smectite_Li6        Smectite_Li7        none
+END
+
+Condition rain
+units            mol/kg
+temperature      7.0
+pH               5.5
+!Na+              2.E-06
+Na+              3.31e-05
+K+               8.79e-06
+Ca++             3.53E-05
+Mg++             1.49E-05
+Al+++            6.89E-08
+Fe+++            1.E-16
+Fe++             1.E-16
+!!Li6+             7.433120E-09
+!!Li7+             9.256688E-08
+Li6+             2.984483E-09
+Li7+             3.711552E-08
+SiO2(aq)         2.12E-05
+CO2(aq)          CO2(g)  1.E-02
+O2(aq)          O2(g)  1.8E-1
+Cl-              charge
+!1.E-06
+END
+
+Condition corestone
+units            mol/kg
+temperature      7.0
+pH               8.5
+Na+              1.4558E-04
+K+               6.1035E-05
+Ca++             1.E-05
+Al+++            6.89E-08
+Fe+++            1.E-07
+Fe++             1.E-07
+Mg++             2.7157E-05
+Li6+             7.507778E-09
+Li7+             9.249222E-08
+SiO2(aq)         1.087096E-04
+O2(aq)           O2(g)  1.E-05
+CO2(aq)          CO2(g)  1.E-06
+Cl-              charge
+Quartz        0.30    bsa   50.
+K-Feldspar_Li    0.23    bsa   300.
+Oligoclase_Li    0.29    bsa   1000.
+Biotite_Li       0.08    bsa   320.
+!Kaolinite     0.0001  ssa   10.
+!Illite        0.0001  ssa   10.
+!Illite_Li7   9.24922217E-05  ssa   10.
+!Illite_Li6   7.50777834E-06  ssa   10.
+Kaolinite_Li7   9.24922217E-05  ssa   10.
+Kaolinite_Li6   7.50777834E-06  ssa   10.
+!Smectite      0.0001  ssa   10.
+END
+
+MINERALS
+!Quartz       -label default  -rate -13.99
+!K-Feldspar   -label default  -rate -12.41
+!Oligoclase   -label default  -rate -11.84
+!Biotite      -label default  -rate -12.55
+!Illite       -label default  -rate -14.41
+!Kaolinite    -label default  -rate -13.18
+!Smectite     -label default  -rate -12.78
+Quartz       -label default
+K-Feldspar_Li   -label default
+Oligoclase_Li   -label default
+Biotite_Li      -label default
+!Illite       -label default  -rate -15.11
+!Illite_Li7       -label default  -rate -15.11
+!Illite_Li6       -label default  -rate -15.07944982
+!Illite_Li7       -label default  -rate -17.
+!!Illite_Li6       -label default  -rate -15.07944982
+!Illite_Li6       -label default  -rate -17.
+!!Illite_Li6       -label default  -rate -15.09
+Kaolinite_Li7       -label default  -rate -13.18
+Kaolinite_Li6       -label default  -rate -13.16757689
+!Kaolinite_Li6       -label default  -rate -13.18
+!Kaolinite   -label default
+!Smectite     -label default
+END
+
+PRIMARY_SPECIES
+H+
+Na+
+K+
+Ca++
+Mg++
+Al+++
+Fe+++
+Fe++
+Li7+
+Li6+
+SiO2(aq)
+CO2(aq)
+O2(aq)
+Cl-
+END
+
+SECONDARY_SPECIES
+Al(OH)2+ 
+AlO2-                                                                   
+AlOH++                                                                  
+HCO3-                                                                   
+H2SiO4--                                                                                                                      
+HAlO2(aq)                                                               
+HCl(aq)                                                                 
+HSiO3-                                                                 
+KCl(aq)                                                                 
+KOH(aq)                                                                 
+NaAlO2(aq)                                                              
+NaCl(aq)                                                                
+NaHSiO3(aq)                                                              
+NaOH(aq)                                                               
+OH-                                                                     
+CO3--                                                                   
+NaCO3-                                                                  
+NaHCO3(aq)  
+!CaCO3(aq)
+!CaCl+
+!CaCl2
+!CaHCO3+
+!CaOH+
+
+END
+
+GASES
+CO2(g)
+O2(g)
+END
+
+EROSION/BURIAL
+! Default:   positive for burial, negative for erosion
+! distance_units meters
+! time_units  years
+! erode_x  0.0
+! erode_y  0.0
+time_units  years
+distance_units meters
+erode_x    -1.0E-04
+!erode_x   0.000000000000
+END
+
+FLOW
+time_units       years
+distance_units   meters
+calculate_flow   true
+permeability_x   1.00E-10  default
+pressure         8.88    zone 0-0 1-1 1-1 fix
+pressure         0.00     zone 201-201 1-1 1-1 fix
+!constant_flow    1.4
+END
+ 
+POROSITY
+mineral_update    true
+!porosity_update   true
+END
+ 
+DISCRETIZATION
+distance_units   meters
+xzones           200   0.1
+END
